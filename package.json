@@ -21,7 +21,7 @@
   },
   "scripts": {
     "serve": "nodemon index.js --exec babel-node",
-    "sass": "sass --watch public/css/styles.scss:public/main.css --no-source-map --style=nested",
+    "sass": "sass --watch public/css/styles.scss:public/main.css --no-source-map",
     "start": "node index.js --exec babel-node"
   }
 }
