@@ -7,3 +7,6 @@ package-lock.json
 
 # FOLDERS
 /node_modules
+/dist
+public/img/**/*
+public/fonts/**/*
