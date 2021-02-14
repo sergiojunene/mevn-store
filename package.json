@@ -1,0 +1,22 @@
+{
+  "name": "mevn-store",
+  "version": "1.0.0",
+  "description": "Tienda digital con MEVN Stack - Juan Carlos Arcila",
+  "main": "index.js",
+  "repository": "git@github.com:sergiojunene/mevn-store.git",
+  "author": "Sergio Jurado Casado <sergiojurado.casado@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-node": "0.0.1-security",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-stage-3": "6.24.1",
+    "colors": "1.4.0",
+    "cors": "2.8.5",
+    "dotenv": "8.2.0",
+    "mongoose": "5.11.16",
+    "morgan": "1.10.0",
+    "sass": "1.32.7"
+  }
+}
