@@ -1,0 +1,23 @@
+// FUNCTIONS: Convert PX to REM units
+@function rem($size, $fz: 16px) { 
+    $rem: ($size / $fz ) * 1rem; 
+    @return $rem; 
+}
+
+// FUNCTION: Border radius
+@function radius($radius){
+    @if type_of($radius) == number and unit($radius) == ''{
+        $radius: ($radius * 1) + unquote('px');
+        @return $radius;
+    } @if else unit($radius) == '%'{
+        @return $radius;
+    } @else {
+        @error 'Function bdrRadius() requires a px or % unit as argument';
+    }
+}
+
+// FUNCTIONS: Choose a fontsize from map-get
+@function fontsize($size) {
+    @if map-has-key($fontSizes, $size) { @return map-get($fontSizes,$size); } 
+    @else { @error '$size is not valid, valid values are h1, h2, h3, base, small, tiny'; }
+}

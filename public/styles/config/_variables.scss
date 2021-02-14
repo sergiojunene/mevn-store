@@ -1,0 +1,54 @@
+// ? ========================= COLORS =========================
+
+$primary-color: hsl(270, 50%, 40%);
+$secondary-color: hsl(40, 70%, 95%);
+$tertiary-color: hsl(240, 80%, 60%);
+$theme-light-color: hsl(0, 0%, 96%);
+$theme-dark-color:  hsl(0, 0%, 10%); 
+$theme-text-dark:   hsl(0, 10%, 20%);
+$theme-text-light:  hsl(60, 10%, 90%);
+
+
+// ? ========================= TYPOGRAPHY =========================
+
+// FONT FAMILIES:
+$body-font-family:  sans-serif;
+$title-font-family: "Verdana", sans-serif;
+$code-font-family:  "inconsolata", monospace;
+// FONT SIZES:
+$fontSizes: (
+    h1:     rem(40px), 
+    h2:     rem(32px), 
+    h3:     rem(26px), 
+    h4:     rem(20px),
+    base:   rem(16px), 
+    small:  rem(12px), 
+    tiny:   rem(8px) 
+);
+
+
+// ? ========================= LAYOUT & RESPONSIVENESS =========================
+
+// Dimensions: 
+$minWidth: 100vw;
+$minHeight: 100vh;
+
+$zIndex: ( 
+    base:       10, 
+    modal:      100, 
+    overlay:    1000, 
+    popup:      1100, 
+);
+
+// MQ and Breakpoints to layout fluid and Responsiveness: 
+$breakpoints: (
+    hd:     rem(1080px),
+    lg:     rem(600px),
+    md:     rem(400px),
+    wide:   rem(1366px),
+    xlg:    rem(800px)
+);
+
+
+// ? ========================= ANIMATIONS =========================
+$transition: .3s ease-in-out;

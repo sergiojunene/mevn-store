@@ -1,0 +1,8 @@
+// CONFIGURATION: Files don't generate final CSS:
+@import '_config.scss';
+// NORMALIZE: Reset and normalize all HTML elements:
+@import '_normalize.scss';
+// THEME: Classes of layout structure
+@import 'theme/_layout.scss';
+
+

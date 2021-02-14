@@ -1,0 +1,81 @@
+:root{
+
+    // COLORS: 
+    --primary-color: hsl(270, 50%, 40%);
+    --secondary-color: hsl(39, 69%, 90%);
+    --tertiary-color: hsl(240, 80%, 60%);
+    --theme-light-color: hsl(0, 0%, 96%);
+    --theme-dark-color:  hsl(0, 0%, 10%); 
+    --theme-text-dark:   hsl(0, 10%, 20%);
+    --theme-text-light:  hsl(60, 10%, 90%);
+
+    // FONTS: FAMILIES
+    --body-font-family:  sans-serif;
+    --title-font-family: "Verdana", sans-serif;
+    --code-font-family:  "inconsolata", monospace;
+
+    // FONTS: SIZES
+    --h1:     rem(40px); 
+    --h2:     rem(32px); 
+    --h3:     rem(20px);
+    --base:   rem(16px); 
+    --small:  rem(12px); 
+    --tiny:   rem(8px);
+
+    // LAYOUT AND DIMENSIONS
+    --minHeight-vp: 100vh;
+    --minHeight:    100%;
+    --minWidth-vp:  100vw;
+    --minWidth:     100%;
+
+    // Z-INDEX SIZES
+    --normal:   10;
+    --modal:    100;
+    --overlay:  1000;
+    --popup:    1100;
+
+    // RESPONSIVENESS: BREAKPOINTS AND MQ's 
+    --hd:     rem(1080px);
+    --lg:     rem(600px);
+    --md:     rem(400px);
+    --wide:   rem(1366px);
+    --xlg:    rem(800px);
+
+    // ANIMATIONS
+    --transition: .5s ease-in-out;
+
+}
+
+// HTML NODE ELEMENT
+html {
+    box-sizing: border-box;
+    font-family: var(--body-font-family);
+    font-size: var(--base);
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+// BODY NODE ELEMENT
+body {
+    background-color: var(--secondary-color);
+    color: var(--theme-text-dark);
+    min-height: var(--minHeight);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+a {
+    color: var(--tertiary-color);
+    padding: .25rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color, background-color, var(--transition);
+    
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--theme-text-light);
+    }
+}
